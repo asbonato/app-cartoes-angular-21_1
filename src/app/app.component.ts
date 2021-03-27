@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projeto02';
+
+  textoBotao = "Esconder";
+  esconder =  false;
+
+  alterarExibicao() {
+    this.esconder = !this.esconder;
+    this.textoBotao = this.esconder?"Exibir":"Esconder"; 
+  }
+
+
 }
